@@ -250,7 +250,4 @@ Optional **Docker Compose** setup can be added for API, DB, and Redis orchestrat
 For **evaluation and demonstration** purposes only.
 All third-party libraries retain their original licenses.
 
----
-
-Would you like me to tailor this README for **Docker + .env.example** setup (so users can run it with one `docker-compose up`)? That version looks even cleaner on GitHub.
 ```
