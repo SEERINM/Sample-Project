@@ -82,7 +82,7 @@ project/
 > 🪟 On Windows, ensure PostgreSQL and Redis services are running and added to PATH.
 
 ---
-
+```
 ## 🧩 Setup
 
 ### 1️⃣ Clone and Create Environments
