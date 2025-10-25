@@ -31,7 +31,7 @@ This system intelligently discovers unknown database schemas, generates safe SQL
 
 ## 📁 Project Structure
 
-```
+
 
 project/
 ├── backend/
@@ -69,8 +69,6 @@ project/
 ├── requirements.txt
 ├── package.json
 └── README.md
-
-````
 
 ---
 
