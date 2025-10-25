@@ -1,6 +1,6 @@
-
-# 🧠 NLP Query Engine for Employee Data
 ```
+# 🧠 NLP Query Engine for Employee Data
+
 A **production-ready, schema-adaptive Natural Language Query Engine** for structured employee databases and unstructured HR documents.
 
 This system intelligently discovers unknown database schemas, generates safe SQL from natural language, performs **semantic document retrieval**, and merges results — all within a fast, cache-optimized API and a clean, modern web UI.
@@ -250,5 +250,4 @@ Optional *Docker Compose* setup can be added for API, DB, and Redis orchestratio
 ```
 For *evaluation and demonstration* purposes only.
 All third-party libraries retain their original licenses.
-
 ```
