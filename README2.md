@@ -1,6 +1,6 @@
-markdown
-# 🧠 NLP Query Engine for Employee Data
 
+# 🧠 NLP Query Engine for Employee Data
+```
 A **production-ready, schema-adaptive Natural Language Query Engine** for structured employee databases and unstructured HR documents.
 
 This system intelligently discovers unknown database schemas, generates safe SQL from natural language, performs **semantic document retrieval**, and merges results — all within a fast, cache-optimized API and a clean, modern web UI.
@@ -28,10 +28,10 @@ This system intelligently discovers unknown database schemas, generates safe SQL
 | **Packaging** | pip / venv (Docker optional) |
 
 ---
-
+```
 ## 📁 Project Structure
 
-
+```
 
 project/
 ├── backend/
@@ -71,9 +71,9 @@ project/
 └── README.md
 
 ---
-
+```
 ## ⚙ Prerequisites
-
+```
 - **Python** 3.10+  
 - **Node.js** 18+  
 - **PostgreSQL** 13+  
@@ -82,7 +82,7 @@ project/
 > 🪟 On Windows, ensure PostgreSQL and Redis services are running and added to PATH.
 
 ---
-
+```
 ## 🧩 Setup
 
 ### 1️⃣ Clone and Create Environments
@@ -105,7 +105,7 @@ cd ..
 `
 
 ### 2️⃣ Configure Environment
-
+```
 Create a .env file in backend/:
 
 ini
@@ -118,10 +118,10 @@ EMBEDDINGS_MODEL=sentence-transformers/all-MiniLM-L6-v2
 BATCH_SIZE=32
 POOL_SIZE=10
 DOC_MAX_MB=10
-
+```
 
 ### 3️⃣ (Optional) Seed Sample Database
-
+```
 Use provided SQL (tables: employees, departments, documents) to populate employees_db.
 
 ---
@@ -153,9 +153,9 @@ npm start
 Your app will open at *[http://localhost:3000](http://localhost:3000)* (proxying to FastAPI on 8000).
 
 ---
-
+```
 ## 🌐 API Endpoints
-
+```
 | Method | Endpoint                | Description                             |
 | :----- | :---------------------- | :-------------------------------------- |
 | POST | /api/ingest/database  | Discover schema from DB connection      |
@@ -167,9 +167,9 @@ Your app will open at *[http://localhost:3000](http://localhost:3000)* (proxying
 | GET  | /health               | Service health check                    |
 
 ---
-
+```
 ## 💡 Frontend Features
-
+```
 * 🧠 *Database Connector* — enter connection string, auto-discover schema.
 * 📄 *Document Uploader* — drag-drop, progress tracking, per-file validation.
 * 💬 *Query Panel* — smart autocomplete from schema vocabulary.
@@ -178,9 +178,9 @@ Your app will open at *[http://localhost:3000](http://localhost:3000)* (proxying
 * 🌗 *Theme Toggle* — light/dark mode with Bootstrap data-bs-theme.
 
 ---
-
+```
 ## 🧮 Example Queries
-
+```
 * “How many employees do we have?”
 * “Average salary by department”
 * “Top 3 highest paid employees in each division”
@@ -189,9 +189,9 @@ Your app will open at *[http://localhost:3000](http://localhost:3000)* (proxying
 * “Python developers in Engineering with resumes attached”
 
 ---
-
+```
 ## 🔐 Security & Reliability
-
+```
 * ✅ Parameterized SQL only — *no DDL/DML generation*
 * ✅ File validation & sanitization
 * ✅ CORS-safe configuration
@@ -199,9 +199,9 @@ Your app will open at *[http://localhost:3000](http://localhost:3000)* (proxying
 * ✅ Health and metrics endpoints for observability
 
 ---
-
+```
 ## ⚡ Performance & Benchmark
-
+```
 * Connection pooling (SQLAlchemy QueuePool)
 * Async ingestion + batch embeddings
 * Caching via Redis (TTL + invalidation)
@@ -221,32 +221,33 @@ p95 = 45 ms | avg = 36 ms | errors = 0 (0.0%)
 
 
 ---
-
+```
 ## 🧰 Testing
-
+```
 * *Unit Tests:* schema discovery, NL→SQL mapping, caching, document chunking.
 * *Integration Tests:* run across schema variants (employees/departments, staff/divisions).
 * *Benchmark:* verify p95 < 2000 ms under load.
 
 ---
-
+```
 ## ⚠ Known Limitations
-
+```
 * Very complex multi-table analytics may need manual model tuning.
 * Document highlight granularity: snippet-level only.
 * MySQL/SQLite may require window/date syntax adjustments.
 
 ---
-
+```
 ## ⚙ Configuration
-
+```
 All environment variables live in backend/.env.
 Optional *Docker Compose* setup can be added for API, DB, and Redis orchestration.
 
 ---
 
-## 🧾 License
 
+## 🧾 License
+```
 For *evaluation and demonstration* purposes only.
 All third-party libraries retain their original licenses.
 
